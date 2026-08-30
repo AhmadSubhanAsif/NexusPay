@@ -14,11 +14,12 @@
 		A10000000000000000000005 /* FeatureFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000005 /* FeatureFlags.swift */; };
 		A10000000000000000000006 /* NexusPayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000006 /* NexusPayTests.swift */; };
 		A10000000000000000000007 /* NexusPayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000007 /* NexusPayUITests.swift */; };
+		BC10000000000000000000001 /* NexusTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC20000000000000000000001 /* NexusTextField.swift */; };
+		BD10000000000000000000001 /* NexusPasswordField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD20000000000000000000001 /* NexusPasswordField.swift */; };
 		FA7D6E2F3044434F00522C34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7D6E2E3044434F00522C34 /* Assets.xcassets */; };
 		FA7D6E35304446D400522C34 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D6E34304446D400522C34 /* SignInView.swift */; };
 		FA7D6E383044470600522C34 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D6E373044470600522C34 /* SignInViewModel.swift */; };
-		BC10000000000000000000001 /* NexusTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC20000000000000000000001 /* NexusTextField.swift */; };
-		BD10000000000000000000001 /* NexusPasswordField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD20000000000000000000001 /* NexusPasswordField.swift */; };
+		FAC05AC83044EA2B00032A76 /* NexusPrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC05AC73044EA2B00032A76 /* NexusPrimaryButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,11 +50,12 @@
 		A20000000000000000000008 /* NexusPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NexusPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A20000000000000000000009 /* NexusPayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NexusPayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A20000000000000000000010 /* NexusPayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NexusPayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC20000000000000000000001 /* NexusTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NexusTextField.swift; sourceTree = "<group>"; };
+		BD20000000000000000000001 /* NexusPasswordField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NexusPasswordField.swift; sourceTree = "<group>"; };
 		FA7D6E2E3044434F00522C34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA7D6E34304446D400522C34 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		FA7D6E373044470600522C34 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
-		BC20000000000000000000001 /* NexusTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NexusTextField.swift; sourceTree = "<group>"; };
-		BD20000000000000000000001 /* NexusPasswordField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NexusPasswordField.swift; sourceTree = "<group>"; };
+		FAC05AC73044EA2B00032A76 /* NexusPrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NexusPrimaryButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -317,6 +319,7 @@
 			children = (
 				BC20000000000000000000001 /* NexusTextField.swift */,
 				BD20000000000000000000001 /* NexusPasswordField.swift */,
+				FAC05AC73044EA2B00032A76 /* NexusPrimaryButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -489,6 +492,7 @@
 				BD10000000000000000000001 /* NexusPasswordField.swift in Sources */,
 				FA7D6E35304446D400522C34 /* SignInView.swift in Sources */,
 				FA7D6E383044470600522C34 /* SignInViewModel.swift in Sources */,
+				FAC05AC83044EA2B00032A76 /* NexusPrimaryButton.swift in Sources */,
 				A10000000000000000000001 /* NexusPayApp.swift in Sources */,
 				A10000000000000000000002 /* AppRoute.swift in Sources */,
 				A10000000000000000000003 /* RootCoordinator.swift in Sources */,
