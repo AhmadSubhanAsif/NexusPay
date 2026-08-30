@@ -39,7 +39,12 @@ struct SignInView: View {
                     autocorrectionDisabled: true
                 )
 
-                Spacer()
+                NexusPasswordField(
+                    title: "Password",
+                    placeholder: "Enter your password",
+                    password: $viewModel.password,
+                    isPasswordVisible: $viewModel.isPasswordVisible
+                )
             }
             .padding(24)
         }
