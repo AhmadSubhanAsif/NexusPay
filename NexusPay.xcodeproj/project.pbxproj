@@ -14,6 +14,7 @@
 		A10000000000000000000005 /* FeatureFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000005 /* FeatureFlags.swift */; };
 		A10000000000000000000006 /* NexusPayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000006 /* NexusPayTests.swift */; };
 		A10000000000000000000007 /* NexusPayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000007 /* NexusPayUITests.swift */; };
+		FA7D6E2F3044434F00522C34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7D6E2E3044434F00522C34 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		A20000000000000000000008 /* NexusPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NexusPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A20000000000000000000009 /* NexusPayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NexusPayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A20000000000000000000010 /* NexusPayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NexusPayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA7D6E2E3044434F00522C34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +91,8 @@
 				A40000000000000000000008 /* CoreData */,
 				A40000000000000000000009 /* DesignSystem */,
 				A40000000000000000000010 /* Features */,
-				A20000000000000000000001 /* NexusPayApp.swift */,
+				FA7D6E2D3044430800522C34 /* Resources */,
+				FA7D6E323044438400522C34 /* SupportingFiles */,
 			);
 			path = NexusPay;
 			sourceTree = "<group>";
@@ -123,6 +126,7 @@
 		A40000000000000000000006 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				A20000000000000000000001 /* NexusPayApp.swift */,
 				A20000000000000000000002 /* AppRoute.swift */,
 				A20000000000000000000003 /* RootCoordinator.swift */,
 				A20000000000000000000004 /* AppDependencyContainer.swift */,
@@ -134,6 +138,11 @@
 		A40000000000000000000007 /* CoreDomain */ = {
 			isa = PBXGroup;
 			children = (
+				FA7D6E213044425C00522C34 /* Errors */,
+				FA7D6E203044425200522C34 /* Validation */,
+				FA7D6E1F3044424A00522C34 /* Protocols */,
+				FA7D6E1E3044424000522C34 /* UseCases */,
+				FA7D6E1D3044423400522C34 /* Entities */,
 			);
 			path = CoreDomain;
 			sourceTree = "<group>";
@@ -141,6 +150,13 @@
 		A40000000000000000000008 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				FA7D6E28304442A300522C34 /* Recovery */,
+				FA7D6E273044429700522C34 /* LocalStore */,
+				FA7D6E263044428E00522C34 /* Keychain */,
+				FA7D6E253044428500522C34 /* Session */,
+				FA7D6E243044427A00522C34 /* Repositories */,
+				FA7D6E233044427100522C34 /* DTOs */,
+				FA7D6E223044426800522C34 /* Networking */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -148,6 +164,9 @@
 		A40000000000000000000009 /* DesignSystem */ = {
 			isa = PBXGroup;
 			children = (
+				FA7D6E2B304442BD00522C34 /* ScreenStates */,
+				FA7D6E2A304442B500522C34 /* Theme */,
+				FA7D6E29304442AD00522C34 /* Components */,
 			);
 			path = DesignSystem;
 			sourceTree = "<group>";
@@ -164,11 +183,169 @@
 			path = Features;
 			sourceTree = "<group>";
 		};
-		A40000000000000000000011 /* Auth */ = {isa = PBXGroup; children = (); path = Auth; sourceTree = "<group>"; };
-		A40000000000000000000012 /* KYC */ = {isa = PBXGroup; children = (); path = KYC; sourceTree = "<group>"; };
-		A40000000000000000000013 /* Wallet */ = {isa = PBXGroup; children = (); path = Wallet; sourceTree = "<group>"; };
-		A40000000000000000000014 /* Transfer */ = {isa = PBXGroup; children = (); path = Transfer; sourceTree = "<group>"; };
-		A40000000000000000000015 /* Notifications */ = {isa = PBXGroup; children = (); path = Notifications; sourceTree = "<group>"; };
+		A40000000000000000000011 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000012 /* KYC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = KYC;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000013 /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Wallet;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000014 /* Transfer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Transfer;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000015 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		FA7D6E1D3044423400522C34 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		FA7D6E1E3044424000522C34 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		FA7D6E1F3044424A00522C34 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FA7D6E203044425200522C34 /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Validation;
+			sourceTree = "<group>";
+		};
+		FA7D6E213044425C00522C34 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		FA7D6E223044426800522C34 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		FA7D6E233044427100522C34 /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DTOs;
+			sourceTree = "<group>";
+		};
+		FA7D6E243044427A00522C34 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		FA7D6E253044428500522C34 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		FA7D6E263044428E00522C34 /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Keychain;
+			sourceTree = "<group>";
+		};
+		FA7D6E273044429700522C34 /* LocalStore */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LocalStore;
+			sourceTree = "<group>";
+		};
+		FA7D6E28304442A300522C34 /* Recovery */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Recovery;
+			sourceTree = "<group>";
+		};
+		FA7D6E29304442AD00522C34 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		FA7D6E2A304442B500522C34 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		FA7D6E2B304442BD00522C34 /* ScreenStates */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ScreenStates;
+			sourceTree = "<group>";
+		};
+		FA7D6E2D3044430800522C34 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FA7D6E313044436900522C34 /* Config */,
+				FA7D6E2E3044434F00522C34 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FA7D6E313044436900522C34 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		FA7D6E323044438400522C34 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -269,6 +446,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA7D6E2F3044434F00522C34 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
