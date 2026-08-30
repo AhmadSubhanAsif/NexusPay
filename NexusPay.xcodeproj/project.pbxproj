@@ -1,7 +1,8 @@
 // !$*UTF8*$!
 {
 	archiveVersion = 1;
-	classes = {};
+	classes = {
+	};
 	objectVersion = 56;
 	objects = {
 
@@ -14,6 +15,23 @@
 		A10000000000000000000006 /* NexusPayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000006 /* NexusPayTests.swift */; };
 		A10000000000000000000007 /* NexusPayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000007 /* NexusPayUITests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A90000000000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A80000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A50000000000000000000001;
+			remoteInfo = NexusPay;
+		};
+		A90000000000000000000002 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A80000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A50000000000000000000001;
+			remoteInfo = NexusPay;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A20000000000000000000001 /* NexusPayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NexusPayApp.swift; sourceTree = "<group>"; };
@@ -29,66 +47,437 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A31000000000000000000001 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
-		A31000000000000000000002 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
-		A31000000000000000000003 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		A31000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A31000000000000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A31000000000000000000003 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A40000000000000000000001 = {isa = PBXGroup; children = (A40000000000000000000002 /* NexusPay */, A40000000000000000000003 /* NexusPayTests */, A40000000000000000000004 /* NexusPayUITests */, A40000000000000000000005 /* Products */); sourceTree = "<group>"; };
-		A40000000000000000000002 /* NexusPay */ = {isa = PBXGroup; children = (A40000000000000000000006 /* App */, A20000000000000000000001 /* NexusPayApp.swift */); path = NexusPay; sourceTree = "<group>"; };
-		A40000000000000000000003 /* NexusPayTests */ = {isa = PBXGroup; children = (A20000000000000000000006 /* NexusPayTests.swift */); path = NexusPayTests; sourceTree = "<group>"; };
-		A40000000000000000000004 /* NexusPayUITests */ = {isa = PBXGroup; children = (A20000000000000000000007 /* NexusPayUITests.swift */); path = NexusPayUITests; sourceTree = "<group>"; };
-		A40000000000000000000005 /* Products */ = {isa = PBXGroup; children = (A20000000000000000000008 /* NexusPay.app */, A20000000000000000000009 /* NexusPayTests.xctest */, A20000000000000000000010 /* NexusPayUITests.xctest */); name = Products; sourceTree = "<group>"; };
-		A40000000000000000000006 /* App */ = {isa = PBXGroup; children = (A20000000000000000000002 /* AppRoute.swift */, A20000000000000000000003 /* RootCoordinator.swift */, A20000000000000000000004 /* AppDependencyContainer.swift */, A20000000000000000000005 /* FeatureFlags.swift */); path = App; sourceTree = "<group>"; };
+		A40000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				A40000000000000000000002 /* NexusPay */,
+				A40000000000000000000003 /* NexusPayTests */,
+				A40000000000000000000004 /* NexusPayUITests */,
+				A40000000000000000000005 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A40000000000000000000002 /* NexusPay */ = {
+			isa = PBXGroup;
+			children = (
+				A40000000000000000000006 /* App */,
+				A40000000000000000000007 /* CoreDomain */,
+				A40000000000000000000008 /* CoreData */,
+				A40000000000000000000009 /* DesignSystem */,
+				A40000000000000000000010 /* Features */,
+				A20000000000000000000001 /* NexusPayApp.swift */,
+			);
+			path = NexusPay;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000003 /* NexusPayTests */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000006 /* NexusPayTests.swift */,
+			);
+			path = NexusPayTests;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000004 /* NexusPayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000007 /* NexusPayUITests.swift */,
+			);
+			path = NexusPayUITests;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000005 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000008 /* NexusPay.app */,
+				A20000000000000000000009 /* NexusPayTests.xctest */,
+				A20000000000000000000010 /* NexusPayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000006 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000002 /* AppRoute.swift */,
+				A20000000000000000000003 /* RootCoordinator.swift */,
+				A20000000000000000000004 /* AppDependencyContainer.swift */,
+				A20000000000000000000005 /* FeatureFlags.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000007 /* CoreDomain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreDomain;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000008 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000009 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000010 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				A40000000000000000000011 /* Auth */,
+				A40000000000000000000012 /* KYC */,
+				A40000000000000000000013 /* Wallet */,
+				A40000000000000000000014 /* Transfer */,
+				A40000000000000000000015 /* Notifications */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000011 /* Auth */ = {isa = PBXGroup; children = (); path = Auth; sourceTree = "<group>"; };
+		A40000000000000000000012 /* KYC */ = {isa = PBXGroup; children = (); path = KYC; sourceTree = "<group>"; };
+		A40000000000000000000013 /* Wallet */ = {isa = PBXGroup; children = (); path = Wallet; sourceTree = "<group>"; };
+		A40000000000000000000014 /* Transfer */ = {isa = PBXGroup; children = (); path = Transfer; sourceTree = "<group>"; };
+		A40000000000000000000015 /* Notifications */ = {isa = PBXGroup; children = (); path = Notifications; sourceTree = "<group>"; };
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A50000000000000000000001 /* NexusPay */ = {isa = PBXNativeTarget; buildConfigurationList = A60000000000000000000001 /* Build configuration list for PBXNativeTarget "NexusPay" */; buildPhases = (A30000000000000000000001 /* Sources */, A31000000000000000000001 /* Frameworks */, A30000000000000000000004 /* Resources */); buildRules = (); dependencies = (); name = NexusPay; productName = NexusPay; productReference = A20000000000000000000008 /* NexusPay.app */; productType = "com.apple.product-type.application"; };
-		A50000000000000000000002 /* NexusPayTests */ = {isa = PBXNativeTarget; buildConfigurationList = A60000000000000000000002 /* Build configuration list for PBXNativeTarget "NexusPayTests" */; buildPhases = (A30000000000000000000002 /* Sources */, A31000000000000000000002 /* Frameworks */); buildRules = (); dependencies = (A70000000000000000000001 /* PBXTargetDependency */); name = NexusPayTests; productName = NexusPayTests; productReference = A20000000000000000000009 /* NexusPayTests.xctest */; productType = "com.apple.product-type.bundle.unit-test"; };
-		A50000000000000000000003 /* NexusPayUITests */ = {isa = PBXNativeTarget; buildConfigurationList = A60000000000000000000003 /* Build configuration list for PBXNativeTarget "NexusPayUITests" */; buildPhases = (A30000000000000000000003 /* Sources */, A31000000000000000000003 /* Frameworks */); buildRules = (); dependencies = (A70000000000000000000002 /* PBXTargetDependency */); name = NexusPayUITests; productName = NexusPayUITests; productReference = A20000000000000000000010 /* NexusPayUITests.xctest */; productType = "com.apple.product-type.bundle.ui-testing"; };
+		A50000000000000000000001 /* NexusPay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A60000000000000000000001 /* Build configuration list for PBXNativeTarget "NexusPay" */;
+			buildPhases = (
+				A30000000000000000000001 /* Sources */,
+				A31000000000000000000001 /* Frameworks */,
+				A30000000000000000000004 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NexusPay;
+			productName = NexusPay;
+			productReference = A20000000000000000000008 /* NexusPay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A50000000000000000000002 /* NexusPayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A60000000000000000000002 /* Build configuration list for PBXNativeTarget "NexusPayTests" */;
+			buildPhases = (
+				A30000000000000000000002 /* Sources */,
+				A31000000000000000000002 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A70000000000000000000001 /* PBXTargetDependency */,
+			);
+			name = NexusPayTests;
+			productName = NexusPayTests;
+			productReference = A20000000000000000000009 /* NexusPayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A50000000000000000000003 /* NexusPayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A60000000000000000000003 /* Build configuration list for PBXNativeTarget "NexusPayUITests" */;
+			buildPhases = (
+				A30000000000000000000003 /* Sources */,
+				A31000000000000000000003 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A70000000000000000000002 /* PBXTargetDependency */,
+			);
+			name = NexusPayUITests;
+			productName = NexusPayUITests;
+			productReference = A20000000000000000000010 /* NexusPayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A80000000000000000000001 /* Project object */ = {isa = PBXProject; attributes = {LastUpgradeCheck = 1520; TargetAttributes = {A50000000000000000000001 = {CreatedOnToolsVersion = 15.2;}; A50000000000000000000002 = {CreatedOnToolsVersion = 15.2; TestTargetID = A50000000000000000000001;}; A50000000000000000000003 = {CreatedOnToolsVersion = 15.2; TestTargetID = A50000000000000000000001;};};}; buildConfigurationList = A60000000000000000000004 /* Build configuration list for PBXProject "NexusPay" */; compatibilityVersion = "Xcode 14.0"; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en, Base); mainGroup = A40000000000000000000001; productRefGroup = A40000000000000000000005 /* Products */; projectDirPath = ""; projectRoot = ""; targets = (A50000000000000000000001 /* NexusPay */, A50000000000000000000002 /* NexusPayTests */, A50000000000000000000003 /* NexusPayUITests */); };
+		A80000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					A50000000000000000000001 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					A50000000000000000000002 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = A50000000000000000000001;
+					};
+					A50000000000000000000003 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = A50000000000000000000001;
+					};
+				};
+			};
+			buildConfigurationList = A60000000000000000000004 /* Build configuration list for PBXProject "NexusPay" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A40000000000000000000001;
+			productRefGroup = A40000000000000000000005 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A50000000000000000000001 /* NexusPay */,
+				A50000000000000000000002 /* NexusPayTests */,
+				A50000000000000000000003 /* NexusPayUITests */,
+			);
+		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A30000000000000000000004 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		A30000000000000000000004 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A30000000000000000000001 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000001 /* NexusPayApp.swift in Sources */, A10000000000000000000002 /* AppRoute.swift in Sources */, A10000000000000000000003 /* RootCoordinator.swift in Sources */, A10000000000000000000004 /* AppDependencyContainer.swift in Sources */, A10000000000000000000005 /* FeatureFlags.swift in Sources */); runOnlyForDeploymentPostprocessing = 0; };
-		A30000000000000000000002 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000006 /* NexusPayTests.swift in Sources */); runOnlyForDeploymentPostprocessing = 0; };
-		A30000000000000000000003 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000007 /* NexusPayUITests.swift in Sources */); runOnlyForDeploymentPostprocessing = 0; };
+		A30000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000001 /* NexusPayApp.swift in Sources */,
+				A10000000000000000000002 /* AppRoute.swift in Sources */,
+				A10000000000000000000003 /* RootCoordinator.swift in Sources */,
+				A10000000000000000000004 /* AppDependencyContainer.swift in Sources */,
+				A10000000000000000000005 /* FeatureFlags.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A30000000000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000006 /* NexusPayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A30000000000000000000003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000007 /* NexusPayUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A70000000000000000000001 /* PBXTargetDependency */ = {isa = PBXTargetDependency; target = A50000000000000000000001 /* NexusPay */; targetProxy = A90000000000000000000001 /* PBXContainerItemProxy */; };
-		A70000000000000000000002 /* PBXTargetDependency */ = {isa = PBXTargetDependency; target = A50000000000000000000001 /* NexusPay */; targetProxy = A90000000000000000000002 /* PBXContainerItemProxy */; };
+		A70000000000000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A50000000000000000000001 /* NexusPay */;
+			targetProxy = A90000000000000000000001 /* PBXContainerItemProxy */;
+		};
+		A70000000000000000000002 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A50000000000000000000001 /* NexusPay */;
+			targetProxy = A90000000000000000000002 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXContainerItemProxy section */
-		A90000000000000000000001 /* PBXContainerItemProxy */ = {isa = PBXContainerItemProxy; containerPortal = A80000000000000000000001 /* Project object */; proxyType = 1; remoteGlobalIDString = A50000000000000000000001; remoteInfo = NexusPay; };
-		A90000000000000000000002 /* PBXContainerItemProxy */ = {isa = PBXContainerItemProxy; containerPortal = A80000000000000000000001 /* Project object */; proxyType = 1; remoteGlobalIDString = A50000000000000000000001; remoteInfo = NexusPay; };
-/* End PBXContainerItemProxy section */
-
 /* Begin XCBuildConfiguration section */
-		AA00000000000000000000001 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_CXX_LANGUAGE_STANDARD = "gnu++20"; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES; COPY_PHASE_STRIP = NO; DEBUG_INFORMATION_FORMAT = dwarf; ENABLE_STRICT_OBJC_MSGSEND = YES; GCC_C_LANGUAGE_STANDARD = gnu17; GCC_NO_COMMON_BLOCKS = YES; GCC_OPTIMIZATION_LEVEL = 0; SDKROOT = iphoneos; SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG; }; name = Debug; };
-		AA00000000000000000000002 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_CXX_LANGUAGE_STANDARD = "gnu++20"; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; COPY_PHASE_STRIP = YES; DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym"; ENABLE_NS_ASSERTIONS = NO; GCC_C_LANGUAGE_STANDARD = gnu17; SDKROOT = iphoneos; }; name = Release; };
-		AA00000000000000000000003 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; DEVELOPMENT_TEAM = ""; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_UILaunchScreen_Generation = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; MARKETING_VERSION = 0.1.0; PRODUCT_BUNDLE_IDENTIFIER = com.nexuspay.app; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1"; }; name = Debug; };
-		AA00000000000000000000004 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; DEVELOPMENT_TEAM = ""; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_UILaunchScreen_Generation = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; MARKETING_VERSION = 0.1.0; PRODUCT_BUNDLE_IDENTIFIER = com.nexuspay.app; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1"; }; name = Release; };
-		AA00000000000000000000005 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {BUNDLE_LOADER = "$(TEST_HOST)"; GENERATE_INFOPLIST_FILE = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; PRODUCT_BUNDLE_IDENTIFIER = com.nexuspay.app.tests; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 5.0; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NexusPay.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NexusPay"; }; name = Debug; };
-		AA00000000000000000000006 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {BUNDLE_LOADER = "$(TEST_HOST)"; GENERATE_INFOPLIST_FILE = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; PRODUCT_BUNDLE_IDENTIFIER = com.nexuspay.app.tests; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 5.0; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NexusPay.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NexusPay"; }; name = Release; };
-		AA00000000000000000000007 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {GENERATE_INFOPLIST_FILE = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; PRODUCT_BUNDLE_IDENTIFIER = com.nexuspay.app.uitests; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 5.0; TEST_TARGET_NAME = NexusPay; }; name = Debug; };
-		AA00000000000000000000008 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {GENERATE_INFOPLIST_FILE = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; PRODUCT_BUNDLE_IDENTIFIER = com.nexuspay.app.uitests; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 5.0; TEST_TARGET_NAME = NexusPay; }; name = Release; };
+		AA00000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+			};
+			name = Debug;
+		};
+		AA00000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		AA00000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nexuspay.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		AA00000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nexuspay.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		AA00000000000000000000005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nexuspay.app.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NexusPay.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NexusPay";
+			};
+			name = Debug;
+		};
+		AA00000000000000000000006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nexuspay.app.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NexusPay.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NexusPay";
+			};
+			name = Release;
+		};
+		AA00000000000000000000007 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nexuspay.app.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = NexusPay;
+			};
+			name = Debug;
+		};
+		AA00000000000000000000008 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nexuspay.app.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = NexusPay;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A60000000000000000000001 /* Build configuration list for PBXNativeTarget "NexusPay" */ = {isa = XCConfigurationList; buildConfigurations = (AA00000000000000000000003 /* Debug */, AA00000000000000000000004 /* Release */); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
-		A60000000000000000000002 /* Build configuration list for PBXNativeTarget "NexusPayTests" */ = {isa = XCConfigurationList; buildConfigurations = (AA00000000000000000000005 /* Debug */, AA00000000000000000000006 /* Release */); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
-		A60000000000000000000003 /* Build configuration list for PBXNativeTarget "NexusPayUITests" */ = {isa = XCConfigurationList; buildConfigurations = (AA00000000000000000000007 /* Debug */, AA00000000000000000000008 /* Release */); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
-		A60000000000000000000004 /* Build configuration list for PBXProject "NexusPay" */ = {isa = XCConfigurationList; buildConfigurations = (AA00000000000000000000001 /* Debug */, AA00000000000000000000002 /* Release */); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		A60000000000000000000001 /* Build configuration list for PBXNativeTarget "NexusPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA00000000000000000000003 /* Debug */,
+				AA00000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A60000000000000000000002 /* Build configuration list for PBXNativeTarget "NexusPayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA00000000000000000000005 /* Debug */,
+				AA00000000000000000000006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A60000000000000000000003 /* Build configuration list for PBXNativeTarget "NexusPayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA00000000000000000000007 /* Debug */,
+				AA00000000000000000000008 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A60000000000000000000004 /* Build configuration list for PBXProject "NexusPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA00000000000000000000001 /* Debug */,
+				AA00000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 	};
 	rootObject = A80000000000000000000001 /* Project object */;
