@@ -20,11 +20,7 @@ private struct AppRootView: View {
             Group {
                 switch coordinator.rootRoute {
                 case .signIn:
-                    ContentUnavailableView(
-                        "NexusPay",
-                        systemImage: "building.columns",
-                        description: Text("The secure app foundation is ready for the authentication feature.")
-                    )
+                    SignInView()
                 case .home:
                     ContentUnavailableView(
                         "Wallet",
