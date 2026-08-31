@@ -2,6 +2,7 @@ import Foundation
 
 enum AppRoute: Hashable {
     case signIn
+    case createAccount
     case home
     case kycStatus
     case transactionHistory
@@ -12,6 +13,7 @@ enum AppRoute: Hashable {
     var title: String {
         switch self {
         case .signIn: return "Sign in"
+        case .createAccount: return "Create account"
         case .home: return "Wallet"
         case .kycStatus: return "Verification"
         case .transactionHistory: return "Activity"

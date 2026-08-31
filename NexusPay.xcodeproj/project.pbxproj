@@ -20,6 +20,8 @@
 		FA7D6E35304446D400522C34 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D6E34304446D400522C34 /* SignInView.swift */; };
 		FA7D6E383044470600522C34 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D6E373044470600522C34 /* SignInViewModel.swift */; };
 		FAC05AC83044EA2B00032A76 /* NexusPrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC05AC73044EA2B00032A76 /* NexusPrimaryButton.swift */; };
+		FAC05ACA3044EE2A00032A76 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC05AC93044EE2A00032A76 /* CreateAccountView.swift */; };
+		FAC05ACC3044EE4200032A76 /* CreateAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC05ACB3044EE4200032A76 /* CreateAccountViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		FA7D6E34304446D400522C34 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		FA7D6E373044470600522C34 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		FAC05AC73044EA2B00032A76 /* NexusPrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NexusPrimaryButton.swift; sourceTree = "<group>"; };
+		FAC05AC93044EE2A00032A76 /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
+		FAC05ACB3044EE4200032A76 /* CreateAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,8 +200,8 @@
 		A40000000000000000000011 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				FA7D6E36304446F500522C34 /* ViewModels */,
 				FA7D6E33304446C000522C34 /* Views */,
+				FA7D6E36304446F500522C34 /* ViewModels */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -365,6 +369,7 @@
 			isa = PBXGroup;
 			children = (
 				FA7D6E34304446D400522C34 /* SignInView.swift */,
+				FAC05AC93044EE2A00032A76 /* CreateAccountView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -373,6 +378,7 @@
 			isa = PBXGroup;
 			children = (
 				FA7D6E373044470600522C34 /* SignInViewModel.swift */,
+				FAC05ACB3044EE4200032A76 /* CreateAccountViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -488,9 +494,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAC05ACA3044EE2A00032A76 /* CreateAccountView.swift in Sources */,
 				BC10000000000000000000001 /* NexusTextField.swift in Sources */,
 				BD10000000000000000000001 /* NexusPasswordField.swift in Sources */,
 				FA7D6E35304446D400522C34 /* SignInView.swift in Sources */,
+				FAC05ACC3044EE4200032A76 /* CreateAccountViewModel.swift in Sources */,
 				FA7D6E383044470600522C34 /* SignInViewModel.swift in Sources */,
 				FAC05AC83044EA2B00032A76 /* NexusPrimaryButton.swift in Sources */,
 				A10000000000000000000001 /* NexusPayApp.swift in Sources */,

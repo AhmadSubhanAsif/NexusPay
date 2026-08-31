@@ -20,7 +20,9 @@ private struct AppRootView: View {
             Group {
                 switch coordinator.rootRoute {
                 case .signIn:
-                    SignInView()
+                    SignInView {
+                           coordinator.show(.createAccount)
+                       }
                 case .home:
                     ContentUnavailableView(
                         "Wallet",
@@ -36,7 +38,15 @@ private struct AppRootView: View {
                 }
             }
             .navigationDestination(for: AppRoute.self) { route in
-                Text(route.title)
+                switch route {
+                case .createAccount:
+                    CreateAccountView {
+                        coordinator.goBack()
+                    }
+
+                default:
+                    Text(route.title)
+                }
             }
         }
     }

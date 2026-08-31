@@ -1,14 +1,13 @@
-//
-//  SignInView.swift
-//  NexusPay
-//
-//  Created by Macbook on 30/08/2026.
-//
-
 import SwiftUI
 
 struct SignInView: View {
+    
+    let onCreateAccount: () -> Void
     @StateObject private var viewModel = SignInViewModel()
+    
+    init(onCreateAccount: @escaping () -> Void = {}) {
+           self.onCreateAccount = onCreateAccount
+       }
 
     var body: some View {
         ScrollView {
@@ -66,7 +65,7 @@ struct SignInView: View {
                         .foregroundStyle(.secondary)
 
                     Button("Create an account") {
-                        // Route to registration.
+                        onCreateAccount()
                     }
                     .fontWeight(.semibold)
                 }

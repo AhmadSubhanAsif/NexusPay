@@ -13,4 +13,9 @@ final class RootCoordinator: ObservableObject {
         rootRoute = route
         path.removeAll()
     }
+    
+    func goBack() {
+        guard !path.isEmpty else { return }
+        path.removeLast()
+    }
 }

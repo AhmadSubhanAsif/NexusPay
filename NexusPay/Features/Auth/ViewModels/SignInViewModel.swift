@@ -1,10 +1,3 @@
-//
-//  SignInViewModel.swift
-//  NexusPay
-//
-//  Created by Macbook on 30/08/2026.
-//
-
 import Foundation
 import Combine
 
